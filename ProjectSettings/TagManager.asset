@@ -42,3 +42,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Player
+    uniqueID: 2176800745
+    locked: 0
+  - name: Grass
+    uniqueID: 3861892529
+    locked: 0
+  - name: Enemy
+    uniqueID: 1898968455
+    locked: 0
