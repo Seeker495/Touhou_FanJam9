@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,6 +10,14 @@ public class Player : MonoBehaviour
     private Rigidbody2D m_rigidBody2D;
 
     private bool m_isHiding = true;
+    private List<GameObject> m_playerPlace = new List<GameObject>(2);
+    private int m_placeIndex = 1;
+    private void Awake()
+    {
+        m_playerPlace = GameObject.FindGameObjectsWithTag("Player's_Place").ToList();
+        m_rigidBody2D.position = m_playerPlace[m_placeIndex].GetComponent<Rigidbody2D>().position;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +34,9 @@ public class Player : MonoBehaviour
     {
         if (!m_isHiding) return;
         Debug.Log("Moving");
+        var move = context.ReadValue<Vector2>();
+        m_placeIndex = (int)Mathf.Clamp01(m_placeIndex + move.x);
+        m_rigidBody2D.position = m_playerPlace[m_placeIndex].GetComponent<Rigidbody2D>().position;
     }
 
     public void StopHiding(InputAction.CallbackContext context)
