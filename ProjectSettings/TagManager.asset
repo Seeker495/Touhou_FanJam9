@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Canvas
   - Player's_Place
+  - Grass
   layers:
   - Default
   - TransparentFX

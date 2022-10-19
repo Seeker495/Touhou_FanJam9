@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
 
     private bool m_isHiding = true;
     private List<GameObject> m_playerPlace = new List<GameObject>(2);
-    private int m_placeIndex = 1;
+    private int m_placeIndex = 0;
     private void Awake()
     {
         m_playerPlace = GameObject.FindGameObjectsWithTag("Player's_Place").ToList();
@@ -41,13 +41,15 @@ public class Player : MonoBehaviour
 
     public void StopHiding(InputAction.CallbackContext context)
     {
-        m_isHiding = true;
+        m_isHiding = false;
+        GetComponent<SpriteRenderer>().sortingOrder++;
         Debug.Log("Hiding stopped");
     }
 
     public void StartHiding(InputAction.CallbackContext context)
     {
-        m_isHiding = false;
+        m_isHiding = true;
+        GetComponent<SpriteRenderer>().sortingOrder--;
         Debug.Log("Hiding started");
     }
 
