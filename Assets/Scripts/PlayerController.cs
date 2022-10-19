@@ -37,10 +37,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Controller m_controller;
 
-
+    private Player m_player;
     // Start is called before the first frame update
     private void Awake()
     {
+        m_player = GameObject.FindWithTag("Player").GetComponent<Player>();
         Enable();
     }
 
@@ -52,9 +53,10 @@ public class PlayerController : MonoBehaviour
     public void Enable()
     {
         m_controller.Enable();
-        //m_controller.Move.action.performed += ;
-        //m_controller.Spook.action.performed += ;
-        //m_controller.Spook.action.canceled += ;
+        m_controller.Move.action.started += m_player.Move;
+        m_controller.Spook.action.started += m_player.StopHiding;
+        m_controller.Spook.action.performed += m_player.Spook;
+        m_controller.Spook.action.canceled += m_player.StartHiding;
     }
 
     public void Disable()
