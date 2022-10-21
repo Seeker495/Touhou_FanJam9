@@ -9,7 +9,7 @@ public class MainMenu: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        BackButton();
     }
 
     // Update is called once per frame
@@ -22,12 +22,16 @@ public class MainMenu: MonoBehaviour
     {
         optionPanel.SetActive(false);
         creditPanel.SetActive(false);
-
     }
 
     public void GoToOption()
     {
         optionPanel.SetActive(true);
+    }
+
+    public void GoToCredit()
+    {
+        creditPanel.SetActive(true);
     }
 
     public void QuitGame()
@@ -36,7 +40,7 @@ public class MainMenu: MonoBehaviour
         Debug.Log("Quit Game");
     }
 
-    public void PlayGame(string playSceneIndex)
+    public void PlayGame(int playSceneIndex)
     {
         SceneManager.LoadScene(playSceneIndex);
     }
