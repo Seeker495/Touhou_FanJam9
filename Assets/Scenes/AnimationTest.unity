@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 873454891}
   - component: {fileID: 873454889}
   m_Layer: 0
-  m_Name: Youmu_Calm
+  m_Name: Youmu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -245,7 +245,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1448334998
 Animator:
   serializedVersion: 4
@@ -434,7 +434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1907972601
 Animator:
   serializedVersion: 4
