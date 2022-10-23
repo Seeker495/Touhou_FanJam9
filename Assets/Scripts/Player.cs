@@ -12,6 +12,9 @@ public class Player : MonoBehaviour
     private bool m_isHiding = true;
     private List<GameObject> m_playerPlace = new List<GameObject>(2);
     private int m_placeIndex = 0;
+
+    [SerializeField]
+    private Score m_score;
     private void Awake()
     {
         m_playerPlace = GameObject.FindGameObjectsWithTag("Player's_Place").ToList();
@@ -27,7 +30,6 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -55,7 +57,16 @@ public class Player : MonoBehaviour
 
     public void Spook(InputAction.CallbackContext context)
     {
-
+        AddScore(Parameter.SPOOK_BASE_POINT * Parameter.MULTIPLY_SCORE);
     }
 
+    public void AddScore(in int score)
+    {
+        m_score.AddScore(score);
+    }
+
+    public int GetScore()
+    {
+        return m_score.GetScore();
+    }
 }
