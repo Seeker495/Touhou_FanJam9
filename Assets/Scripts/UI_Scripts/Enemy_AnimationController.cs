@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Enemy_AnimationController: MonoBehaviour
 {
-    [SerializeField]
+    //[SerializeField]
     private Animator enemyAnimator;
 
     [Header("We control the animation state through these bool")]

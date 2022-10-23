@@ -71,7 +71,6 @@ public class SoundManager: MonoBehaviour
         AudioManager.instance.Play(SFXname);
     }
 
-
     // Update is called once per frame
     void Update()
     {
