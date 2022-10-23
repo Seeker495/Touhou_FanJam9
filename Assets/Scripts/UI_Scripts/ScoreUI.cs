@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class ScoreUI : MonoBehaviour
+public class ScoreUI: MonoBehaviour
 {
     [SerializeField]
     private GameObject m_multiplyScore;
@@ -27,8 +25,8 @@ public class ScoreUI : MonoBehaviour
 
     private void Update()
     {
-        Parameter.MULTIPLY_SCORE = (int)(m_enemy.m_stateMachine.GetState()) + 1;
+        Parameter.MULTIPLY_SCORE = (int) (m_enemy.m_stateMachine.GetState()) + 1;
         m_totalScore.GetComponent<TextMeshProUGUI>().text = m_player.GetScore().ToString("#,0");
-        m_multiplyScore.GetComponent<TextMeshProUGUI>().text = $"Multiply: x{Parameter.MULTIPLY_SCORE}";
+        m_multiplyScore.GetComponent<TextMeshProUGUI>().text = $"Multiply: <color=#58FF7C> x{Parameter.MULTIPLY_SCORE} </color>";
     }
 }

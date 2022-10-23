@@ -40,6 +40,26 @@ MonoBehaviour:
     value: {fileID: 8300000, guid: 36a2d9978aa9a1342862699cfd5ec46f, type: 3}
   - key: grass
     value: {fileID: 8300000, guid: 584d5d895a4c05e49bb6baf03161acad, type: 3}
+  - key: pause
+    value: {fileID: 8300000, guid: 7759c8d608c89124c8ed8c1b4c02f200, type: 3}
   - key: select
     value: {fileID: 8300000, guid: 4a498e976fe9b2340b1b6e3d30226003, type: 3}
+  - key: spook1
+    value: {fileID: 8300000, guid: 77d3a3c8dd56c5c429ffd94072066d1e, type: 3}
+  - key: spook2
+    value: {fileID: 8300000, guid: 6acdb4b4c01b8324b800a6810a213d13, type: 3}
+  - key: spook3
+    value: {fileID: 8300000, guid: a2b0c46e60d7efd44a43270abb4a4986, type: 3}
+  - key: spook4
+    value: {fileID: 8300000, guid: a5d13602a50cd5540b2111557f85937f, type: 3}
+  - key: spook5
+    value: {fileID: 8300000, guid: e02fb35eeb59f754589fb145ef7c5913, type: 3}
+  - key: swipe
+    value: {fileID: 8300000, guid: d0bdd5b5733400444a41dd5d8f119297, type: 3}
+  - key: swoosh1
+    value: {fileID: 8300000, guid: 641d830851e03c04782f45212f3edba5, type: 3}
+  - key: swoosh2
+    value: {fileID: 8300000, guid: ffe179fb13fce574597a32c5f6f09162, type: 3}
+  - key: unpause
+    value: {fileID: 8300000, guid: 0063032b1ff20c0459063019031f11fc, type: 3}
   tabPos: 0
