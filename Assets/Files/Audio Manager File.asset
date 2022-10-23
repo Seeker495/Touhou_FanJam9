@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1a550171c18a144be85aee12017d69, type: 3}
+  m_Name: Audio Manager File
+  m_EditorClassIdentifier: 
+  audioMixer:
+  - {fileID: 0}
+  soundPrefab: {fileID: 322064603624763291, guid: 6051d75b0602b2d4e80762524c183b04, type: 3}
+  isPopulated: 1
+  directory:
+  - Audio/BGM
+  - Audio/SFX
+  library:
+  - key: Calm - Preview
+    value: {fileID: 8300000, guid: 53326d15e0504a442905c0a347aec060, type: 3}
+  - key: Calm
+    value: {fileID: 8300000, guid: fa78ed35bf66378419ecc2bf6a93a689, type: 3}
+  - key: Menu
+    value: {fileID: 8300000, guid: 24e3bae842d369b4dbea002094dff27c, type: 3}
+  - key: Paranoia - Preview
+    value: {fileID: 8300000, guid: 16bf4c702876fc24990f7bfb07875151, type: 3}
+  - key: Paranoia
+    value: {fileID: 8300000, guid: 66bdb6ac093616c45a6e64791708af4e, type: 3}
+  - key: Scared - Preview
+    value: {fileID: 8300000, guid: f7abde25640d12047864600ec6667ab1, type: 3}
+  - key: Scared
+    value: {fileID: 8300000, guid: 917049c8beae491469a1b9afcc37a3c0, type: 3}
+  - key: back
+    value: {fileID: 8300000, guid: 821f6c4c67c5d2643bdb53012a19616f, type: 3}
+  - key: flick
+    value: {fileID: 8300000, guid: 36a2d9978aa9a1342862699cfd5ec46f, type: 3}
+  - key: grass
+    value: {fileID: 8300000, guid: 584d5d895a4c05e49bb6baf03161acad, type: 3}
+  - key: select
+    value: {fileID: 8300000, guid: 4a498e976fe9b2340b1b6e3d30226003, type: 3}
+  tabPos: 0

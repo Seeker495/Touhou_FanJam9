@@ -570,7 +570,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    Standalone: LETAI_TRUESHADOW
+    Standalone: LETAI_TRUESHADOW;USE_CG_AM_STATIC
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
