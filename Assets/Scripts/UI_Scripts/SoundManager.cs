@@ -1,6 +1,7 @@
 using CarterGames.Assets.AudioManager;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SoundManager: MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class SoundManager: MonoBehaviour
     private AudioClip menuBGM;
     [SerializeField]
     private AudioClip gameBGM;
+
+    [Header("Option values")]
+    [SerializeField]
+    private Slider volumeSlider;
 
     private void OnEnable()
     {
@@ -48,6 +53,12 @@ public class SoundManager: MonoBehaviour
             MusicPlayer.instance.ShouldLoop = true;
             MusicPlayer.instance.PlayTrack(gameBGM);
         }
+    }
+
+    public void BGMVolumeChange()
+    {
+        var volumeValue = volumeSlider.value;
+        MusicPlayer.instance.SetVolume(volumeValue);
     }
 
     public void OnButtonHover(string SFXname)
