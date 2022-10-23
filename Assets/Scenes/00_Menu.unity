@@ -3013,7 +3013,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Game's Title\n Placeholder"
+  m_text: "A Mischief \nNight"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e558ab7e483444b4ab8d51bb0b83d7ba, type: 2}
   m_sharedMaterial: {fileID: -637361879677730266, guid: e558ab7e483444b4ab8d51bb0b83d7ba, type: 2}
